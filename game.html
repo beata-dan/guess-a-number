@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess The Number</title>
     <script src="game.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
-<body>
-    <main class="game-section">
+<body class="container bg-danger-subtle mt-5 text-align: center font-family-sans-serif">
+    <main class="game-section container bg-white w-150 p-5">
         <h1>Guess the Number</h1>
         <p class="subtitle">I'm thinking of a number between 1 and 100</p>
 
-        <div class="input-group">
-            <input 
+        <div class="input-group w-40">
+            <input
             type="number"
             id="guess-input"
             min="1"
@@ -25,10 +30,10 @@
         <p id="hint-message" class="hint"></p>
 
         <div class="stats">
-            <span>Attempts:<span id="attempts-count">0</span></span>
+          <span>Attempts:<span id="attempts-count">0</span></span>
         </div>
 
         <button id="reset-btn" class="reset">New Game</button>
-    </main>    
+    </main>
 </body>
 </html>
