@@ -21,7 +21,7 @@ function checkGuess() {
     attemptsCount.textContent = attempts;
 
     if (userGuess === computerChoice) {
-        hintMessage.textContent = 'YOU GUESSED THE NUMBER IN ${attempts} attempts CONGRATS!';
+        hintMessage.textContent = `YOU GUESSED THE NUMBER IN ${attempts} attempts CONGRATS!`;
     } else if (userGuess > computerChoice) {
         hintMessage.textContent = 'Too High!'
     } else {
